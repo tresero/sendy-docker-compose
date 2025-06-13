@@ -9,7 +9,7 @@ services:
     container_name: sendy_apache
     build:
       args:
-        - SENDY_LICENSE_KEY=${SENDY_LICENSE_KEY}
+        - SENDY_LICENSE_KEY=$FDb84ucbNlUF1razV6OdhBQR4YUR58py
         - CACHEBUST=${CACHEBUST}
     depends_on:
       - sendy_mysql
