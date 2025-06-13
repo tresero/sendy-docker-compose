@@ -56,5 +56,5 @@ RUN echo "Downloading https://sendy.co/download/?license=${SENDY_LICENSE_KEY}" \
     || echo "🚨 Something went wrong with the sendy download, if this is the first time you start this docker stack, this means sendy will not work. If this is not the first time, this means sendy did not auto-update. Please check if the link is live: https://sendy.co/download/?license=${SENDY_LICENSE_KEY}"
 
 # HEALTHCHECK instruction to check the health of the container
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost/ || exit 1
+#HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+#  CMD curl -f http://localhost/ || exit 1
